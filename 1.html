@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Name</title>
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+	<script type="text/javascript" src="./2.js"></script>
+</head>
+<body>
+	<p>Калькулятор сторон.</p>
+	<p>Необходимо узнать ширину или высоту?</p>
+
+	<div>
+		<input type="radio" id="sideChoice1" name="choise_side" value="1" checked="checked">
+		<label for="contactChoice1">Ширину</label>
+		<input type="radio" id="sideChoice2" name="choise_side" value="2">
+		<label for="contactChoice2">Высоту</label>
+	</div>
+	<br>
+	<div>
+		<input type="radio" id="resolutionChoice1" name="choise_resolution" value="0.75">
+		<label for="contactChoice1">4 на 3</label>
+		<input type="radio" id="resolutionChoice2" name="choise_resolution" value="0.5625" checked="checked">
+		<label for="contactChoice2">16 на 9</label>
+		<input type="radio" id="resolutionChoice3" name="choise_resolution" value="0.4286">
+		<label for="contactChoice3">21 на 9</label>
+	</div>
+	<br>
+	<p>Известно</p>
+	<input id="push_number" type="text" value="1920" size="40">
+	<br>
+	<br>
+	<input id="start_calculation" type="button" value="СТАРТ" onclick="start()">
+	<br>
+	<p>Получаем</p>
+	<input id="output_result" type="text" size="40">
+	<br>
+	<br>
+	<table id="table_with_results" border="1" />
+	
+
+
+
+
+
+	<script type="text/javascript">
+		start();
+	</script>
+</body>
+</html>
